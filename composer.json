@@ -1,0 +1,35 @@
+{
+    "name": "nexmailpro/php-sdk",
+    "description": "Standalone PHP SDK for the NexMailPro email verification API.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "nexmailpro",
+        "email-verification",
+        "sdk"
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "NexMailPro\\PhpSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NexMailPro\\PhpSdk\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml.dist"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
